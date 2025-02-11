@@ -1,0 +1,251 @@
+.App {
+    margin: 0px;
+  }
+*, :after, :before {
+    box-sizing: border-box;
+}
+  
+  .App .header {
+    /* background-color: red; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+  }
+  .App .header .logo {
+    /* background-color: blue; */
+    width: 100%;
+    padding: 10px 2px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .logo span {
+    width: 50px;
+    /* background-color: green; */
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+  }
+  .logo .img {
+    flex: 1;
+    width: 100%;
+  }
+  .logo img {
+    width: 150px;
+  }
+  .header .title {
+    padding: 10px 5px;
+    box-sizing: border-box;
+    /* background-color: red; */
+    width: 100%;
+    position: relative;
+  }
+  .title h4 {
+    margin: 0px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+  }
+  .title h5 {
+    margin: 0px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+  }
+  .title h2 {
+    margin: 10px 0px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    font-size: 19px;
+  }
+  .container {
+    position: relative;
+    margin-top: 40px;
+    background-color: #f5f7fb;
+    padding: 20px 5px;
+  }
+  .container h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    color: #025ac4;
+  }
+  .container h4 {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    font-size: 14px;
+  }
+  .container .actionsAdmin{
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    a{
+      text-decoration: none;
+      color: white;
+      font-family: "roboto condensed";
+      background-color: #00467f;
+      padding: 5px 10px;
+      text-align: center;
+      border-radius: 7px;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        padding-left: 5px;
+      }
+    }
+  }
+  
+  .listContainer {
+    width: 100%;
+    /* background-color: blue; */
+  }
+  .listContainer .lista {
+    padding: 0px;
+    margin: 10px 0px;
+  }
+  .listContainer .lista-option {
+    padding: 7.5px 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lista-option .link {
+    text-decoration: none;
+    color: white;
+    font-family: "roboto condensed";
+    background-color: #00467f;
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+  }
+  .lista-option .link:hover {
+    background-color: #003866;
+  }
+  
+  .back {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 50px;
+    height: 50px;
+    top: 42px;
+    z-index: 1;
+    left: 0px;
+  }
+  .back span {
+    font-size: 50px;
+    color: white;
+  }
+  
+  .information {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    z-index: 1;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+  }
+  .information span {
+    color: white;
+    font-family: "roboto condensed";
+  }
+  .information img {
+    width: 35px;
+    margin-left: 10px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+      font-weight: normal;
+      margin: 10px 0px 5px; 
+    }
+    h4{
+      font-weight: normal;
+      margin: 0px 0px 10px; 
+    }
+  }
+  
+  .imageContainer img {
+    width: 50px;
+    position: absolute;
+    top: -25px;
+  }
+  
+  @media screen and (min-width: 767px) {
+    .title h4 {
+      font-size: 21px;
+    }
+    .title h5 {
+      font-size: 21px;
+    }
+    .title h2 {
+      font-size: 25px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .App,
+    .container {
+      max-width: 1024px;
+      margin-left: calc(50% - 512px);
+    }
+  }
+  
+  .scaleUp {
+    height: 35px;
+    width: 35px;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 5px;
+    right: 5px;
+  }
+  .scaleUp span {
+    color: white;
+    font-size: 35px;
+  }
+
+  body .dining .lista-option .link:hover {
+    background-color: rgba(188, 88, 55, 0.8) !important;
+  }
+  body .dining .lista-option .link {
+    background-color: #bc5837 !important;
+  }

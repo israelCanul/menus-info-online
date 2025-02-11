@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+}
+
+.eyeWrapper {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    z-index: 10;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    backface-visibility: none;
+}
+
+.eye {
+    width: 24px;
+    height: 18px;
+    color: red;
+}
+
+.admin {
+    position: fixed;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 1000px;
+    top: 10px;
+    left: calc(50% - 250px);
+    z-index: 12;
+    background-color: white;
+    border-radius: 5px;
+
+    &_background {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0px;
+        left: 0px;
+        z-index: 12;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &_action {
+        i {
+            cursor: pointer;
+        }
+    }
+}

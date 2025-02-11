@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/services/static/css/main.a9e0197a.css",
+    "main.js": "/services/static/js/main.1494976f.js",
+    "static/media/jsoneditor-icons.svg": "/services/static/media/jsoneditor-icons.15f2789dd231f36d43a4.svg",
+    "index.html": "/services/index.html",
+    "static/media/edit-3-svgrepo-com.svg": "/services/static/media/edit-3-svgrepo-com.7cad65c5958bf54686db9a5f71b5f8c7.svg",
+    "main.a9e0197a.css.map": "/services/static/css/main.a9e0197a.css.map",
+    "main.1494976f.js.map": "/services/static/js/main.1494976f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9e0197a.css",
+    "static/js/main.1494976f.js"
+  ]
+}
