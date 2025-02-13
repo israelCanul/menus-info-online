@@ -38,7 +38,8 @@ export const getObjFromUrl = (data) => {
   return result;
 };
 export function getCurrentUrl() {
-  return window.location.pathname.split("/")[1];
+  // return window.location.pathname.split("/")[1];
+  return "services"
 }
 
 export function getUrlPath() {
